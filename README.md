@@ -173,7 +173,7 @@ Everything else takes place inside the component or without impacting the previo
 *   border-left-style
 *   border-left-color
 ### border-image
-*   border-image
+*   border-image (source | slice | width | outset | repeat)
 *   border-image-source
 *   border-image-slice
 *   border-image-width
