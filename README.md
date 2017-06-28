@@ -1,9 +1,5 @@
-# css-declaration-order
+# CSS Declaration Order
 A handy refererence for CSS declarations. 
-
-# CSS: declaration order
-
-Ideally, declarations should be written in a consistent order. Declaration order can be [sorted automatically using CSS Comb](http://csscomb.com/online/). The tool can be refined to sort in any preferred order. Below is a list of our preferred order (items displayed in faint pink are "rarely used" items):
 
 ### position
 
