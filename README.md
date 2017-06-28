@@ -10,95 +10,152 @@ Positioning comes first because it can remove an element from the normal flow of
 
 Everything else takes place inside the component or without impacting the previous two sections, and thus they come last.
 ## Positioning
-### position
-
 *   position
 *   top
 *   right
 *   bottom
 *   left
+*   order (flex property)
 *   z-index
 
 ## Box Model
-### display/visibility
-
+### display
+*   content
 *   display
-*   visibility
-
 ### flex
-
+*   flex (grow | shrink | basis)
+*   flex-grow
+*   flex-shrink
+*   flex-basis
 *   flex-direction
-*   flex-order
-*   flex-pack
-*   flex-align
-
-### columns
-
-*   columns
-*   column-span
-*   column-width
-*   column-count
-*   column-fill
-*   column-gap
-*   column-rule
-*   column-rule-width
-*   column-rule-style
-*   column-rule-color
-
+*   flex-flow
+*   flex-wrap
+*   justify-content
+*   align-items
+*   align-content
+*   align-self
 ### float
-
 *   float
-*   clear
-*   overflow
-*   overflow-x
-*   overflow-y
-*   clip
-
-### box-sizing
-
-*   box-sizing
-
 ### width, height
-
-*   min-width
-*   min-height
-*   max-width
-*   max-height
 *   width
+*   min-width
+*   max-width
 *   height
-
-### margin
-
-*   margin
-*   margin-top
-*   margin-right
-*   margin-bottom
-*   margin-left
-
+*   min-height
+*   max-height
 ### padding
-
-*   padding
+*   padding (top | right | bottom | left)
 *   padding-top
 *   padding-right
 *   padding-bottom
 *   padding-left
+### margin
+*   margin (top | right | bottom | left)
+*   margin-top
+*   margin-right
+*   margin-bottom
+*   margin-left
+### columns
+*   columns (width | count)
+*   column-width
+*   column-count
+*   column-gap
+*   column-fill
+*   column-rule (width | style | color)
+*   column-rule-width
+*   column-rule-style
+*   column-rule-color
+*   column-span
+### orphans and widows
+*   break-before
+*   break-inside
+*   break-after
+*   page-break-before
+*   page-break-inside
+*   page-break-after
+*   orphans
+*   widows
+### visibility
+*   overflow
+*   overflow-x
+*   overflow-y
+*   clear
+*   clip
 
-### outline
+## Typographic
+### font
+*   font (style | variant | weight | size / line-height | family)
+*   font-style
+*   font-variant
+*   font-weight
+*   font-size
+*   font-family
+*   line-height
+*   font-size-adjust
+*   font-stretch
+*   src
+*   letter-spacing
+*   hyphens
+*   white-space
+*   word-spacing
+*   word-wrap
+*   word-break
+### color
+*   color
+### text
+*   text-align
+*   text-align-last
+*   text-decoration (line | color)
+*   text-decoration-line
+*   text-decoration-color
+*   text-underline-position
+*   text-emphasis (style | color)
+*   text-emphasis-style
+*   text-emphasis-color
+*   text-emphasis-position
+*   text-indent
+*   text-justify
+*   text-outline
+*   text-overflow (mode | ellipsis)
+*   text-overflow-mode
+*   text-overflow-ellipsis
+*   text-shadow
+*   text-transform
+*   text-wrap
+*   tab-size
+*   quotes
+*   vertical-align
+### list
+*   list-style (type | position | image)
+*   list-style-type
+*   list-style-position
+*   list-style-image
+*   counter-increment
+*   counter-reset
+### direction
+*   pointer-events
+*   cursor
 
-*   outline
-*   outline-width
-*   outline-style
-*   outline-color
-*   outline-offset
-
+## Visual
+### background
+*   background (color | image | position / size | repeat | origin | clip | attachment)
+*   background-color
+*   background-image
+*   background-position
+*   background-position-x
+*   background-position-y
+*   background-size
+*   background-repeat
+*   background-origin
+*   background-clip
+*   background-attachment
 ### border
-
-*   border
-*   border-spacing
-*   border-collapse
+*   border (width | style | color)
 *   border-width
 *   border-style
 *   border-color
+*   border-spacing
+*   border-collapse
 *   border-top
 *   border-top-width
 *   border-top-style
@@ -115,17 +172,7 @@ Everything else takes place inside the component or without impacting the previo
 *   border-left-width
 *   border-left-style
 *   border-left-color
-
-### border-radius
-
-*   border-radius
-*   border-top-left-radius
-*   border-top-right-radius
-*   border-bottom-right-radius
-*   border-bottom-left-radius
-
 ### border-image
-
 *   border-image
 *   border-image-source
 *   border-image-slice
@@ -141,148 +188,59 @@ Everything else takes place inside the component or without impacting the previo
 *   border-top-right-image
 *   border-bottom-right-image
 *   border-bottom-left-image
-
-### background
-
-*   background
-*   background-color
-*   background-image
-*   background-attachment
-*   background-position
-*   background-position-x
-*   background-position-y
-*   background-clip
-*   background-origin
-*   background-size
-*   background-repeat
-
+### border-radius
+*   border-radius (top-left | top-right | bottom-right | bottom-left)
+*   border-top-left-radius
+*   border-top-right-radius
+*   border-bottom-right-radius
+*   border-bottom-left-radius
 ### box-shadow
-
 *   box-decoration-break
 *   box-shadow
-
+### box-sizing
+*   box-sizing
+### appearance
+*   outline (color | style | width)
+*   outline-color
+*   outline-style
+*   outline-width
+*   outline-offset
+*   opacity
+*   filter
+*   visibility
+*   size
+*   zoom
 ### table
-
 *   table-layout
 *   caption-side
 *   empty-cells
-
-### color
-
-*   color
-*   opacity
-
-### list
-
-*   list-style
-*   list-style-position
-*   list-style-type
-*   list-style-image
-
-### text
-
-*   quotes
-*   content
-*   counter-increment
-*   counter-reset
-*   vertical-align
-*   text-align
-*   text-align-last
-*   text-decoration
-*   text-emphasis
-*   text-emphasis-position
-*   text-emphasis-style
-*   text-emphasis-color
-*   text-indent
-*   text-justify
-*   text-outline
-*   text-transform
-*   text-wrap
-*   text-overflow
-*   text-overflow-ellipsis
-*   text-overflow-mode
-*   text-shadow
-*   white-space
-*   word-spacing
-*   word-wrap
-*   word-break
-*   tab-size
-*   hyphens
-*   letter-spacing
-
-### font
-
-*   font
-*   font-weight
-*   font-style
-*   font-variant
-*   font-size-adjust
-*   font-stretch
-*   font-size
-*   font-family
-*   src
-*   line-height
-
+### transform
+*   transform
+*   transform-style
+*   transform-origin
+### animation
+*   animation (name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state)
+*   animation-name
+*   animation-duration
+*   animation-timing-function
+*   animation-delay
+*   animation-iteration-count
+*   animation-direction
+*   animation-fill-mode
+*   animation-play-state
+### transition
+*   transition (property | duration | timing-function | delay)
+*   transition-property
+*   transition-duration
+*   transition-timing-function
+*   transition-delay
 ### filters
-
-*   filter
 *   resize
-*   cursor
-
+*   unicode-bidi
+*   direction
 ### nav
-
 *   nav-index
 *   nav-up
 *   nav-right
 *   nav-down
 *   nav-left
-
-### transition
-
-*   transition
-*   transition-delay
-*   transition-timing-function
-*   transition-duration
-*   transition-property
-
-### transform
-
-*   transform
-*   transform-origin
-
-### animation
-
-*   animation
-*   animation-name
-*   animation-duration
-*   animation-play-state
-
-*   animation-timing-function
-*   animation-delay
-*   animation-iteration-count
-*   animation-direction
-
-### direction
-
-*   pointer-events
-*   unicode-bidi
-*   direction
-
-### orphans and widows
-
-*   break-before
-*   break-inside
-*   break-after
-*   page-break-before
-*   page-break-inside
-*   page-break-after
-*   orphans
-*   widows
-
-### zoom
-
-*   zoom
-*   max-zoom
-*   min-zoom
-*   user-zoom
-*   orientation
