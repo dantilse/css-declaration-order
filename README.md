@@ -1,14 +1,24 @@
-# CSS Declaration Order
+# SCSS Declaration Order
 Related property declarations should be grouped together following the order:
 
-1. Positioning
-2. Box model
-3. Typographic
-4. Visual
+1. @extends
+2. @include
+3. Component Specific Variables
+4. Positioning
+5. Box model
+6. Typographic
+7. Visual
 
 Positioning comes first because it can remove an element from the normal flow of the document and override box model related styles. The box model comes next as it dictates a component's dimensions and placement.
 
 Everything else takes place inside the component or without impacting the previous two sections, and thus they come last.
+## Sass Extends
+
+## Sass Mixins
+
+## Component Specific Variables
+*  variables used within a certain scope, or for loop counters
+
 ## Positioning
 *   position
 *   top
